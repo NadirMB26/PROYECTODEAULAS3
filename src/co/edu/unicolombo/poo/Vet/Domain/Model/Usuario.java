@@ -11,7 +11,7 @@ public class Usuario {
  protected String clave ;
  protected String telefono ;
  protected String Rol ;
- private List<Mascotas> mascotas;
+ private List<Mascota> mascotas;
 
     public Usuario() {
     }
@@ -80,23 +80,19 @@ public class Usuario {
         this.Rol = Rol;
     }
 
-    public List<Mascotas> getMascotas() {
+    public List<Mascota> getMascotas() {
         return mascotas;
     }
 
-    public void setMascotas(List<Mascotas> mascotas) {
+    public void setMascotas(List<Mascota> mascotas) {
         this.mascotas = mascotas;
     }
- 
- 
- 
 
-
-    public List<Mascotas> getUsers() {
+    public List<Mascota> getUsers() {
         return mascotas;
     }
 
-    public void setUsers(List<Mascotas> users) {
+    public void setUsers(List<Mascota> users) {
         this.mascotas = users;
     }
 

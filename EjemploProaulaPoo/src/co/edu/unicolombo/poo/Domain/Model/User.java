@@ -1,18 +1,18 @@
 
-package co.edu.unicolombo.poo.Vet.Domain.Model;
+package co.edu.unicolombo.poo.Domain.Model;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
 
-public class Mascotas {
+public class User {
  private String codigo;
  private String password;
  private String nombre;
  private String email;
- private Usuario role;
+ private Role role;
  
 
-    public Mascotas(String codigo, String nombre, Usuario rol) throws Exception {
+    public User(String codigo, String nombre, Role rol) throws Exception {
       
         if(codigo==null||codigo.isEmpty()){
             throw new Exception("El codigo es requerido");
@@ -60,11 +60,11 @@ public class Mascotas {
         this.email = email;
     }
 
-    public Usuario getRole() {
+    public Role getRole() {
         return role;
     }
 
-    public void setRole(Usuario role) {
+    public void setRole(Role role) {
         this.role = role;
     }
   
