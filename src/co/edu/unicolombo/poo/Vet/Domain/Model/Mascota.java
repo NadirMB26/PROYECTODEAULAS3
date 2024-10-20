@@ -7,7 +7,7 @@ import java.util.List;
  *
  * @author USER
  */
-class Mascota {
+public class Mascota {
 
     private String cedulaUsuario;
     private String nombreMascota;

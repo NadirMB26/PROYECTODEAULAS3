@@ -5,13 +5,14 @@ public class EliminarUsuCommand {
    private int id;
 
 public EliminarUsuCommand (int id) throws Exception {
-    if (id<=0) {
-    throw new Exception ("El ID es requerido");
+        if (id <= 0) {
+            throw new Exception("El ID es requerido");
+        }
+        this.id = id;
     }
-this.id=id;
-}
-public int getID(){
-return id;
-}
- 
+
+    public int getID() {
+        return id;
+    }
+
 }

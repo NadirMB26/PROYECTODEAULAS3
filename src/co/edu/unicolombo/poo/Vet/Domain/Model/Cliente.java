@@ -3,7 +3,7 @@ package co.edu.unicolombo.poo.Vet.Domain.Model;
 
 import java.util.List;
 
-class Cliente extends Usuario{
+public class Cliente extends Usuario{
     private List<Mascota> mascotas;
 
     public Cliente() {

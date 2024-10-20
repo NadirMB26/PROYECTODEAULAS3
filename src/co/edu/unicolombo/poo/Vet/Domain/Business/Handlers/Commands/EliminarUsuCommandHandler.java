@@ -11,20 +11,15 @@ public class EliminarUsuCommandHandler implements IEliminarUsuCommand{
 
 private IUsuRepository rolRepository;
 
-public EliminarUsuCommandHandler (IUsuRepository rolRepository) {
-this. rolRepository = rolRepository;
-}
+    public EliminarUsuCommandHandler(IUsuRepository rolRepository) {
+        this.rolRepository = rolRepository;
+    }
 
     @Override
     public void eliminar(Usuario usu) throws Exception {
-       Usuario usu1 = new Usuario();
-        usu1.setCedula(usu.getCedula()); 
+        Usuario usu1 = new Usuario();
+        usu1.setCedula(usu.getCedula());
         rolRepository.deleteUsu(usu.getCedula());
     }
-
-
-
-  
-
   
 }

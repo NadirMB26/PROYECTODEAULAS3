@@ -256,7 +256,7 @@ private Usuario usuActual;
     }// </editor-fold>//GEN-END:initComponents
 
     private void ButtonSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonSaveActionPerformed
-       if(FieldName.getText().isEmpty()&&FieldCedula.getText().isEmpty()){
+       if(FieldName.getText().isEmpty()|| FieldCedula.getText().isEmpty()){
           JOptionPane.showMessageDialog(this,"Debes llenar todos los campos");
        }else{
               try {
@@ -336,7 +336,7 @@ private Usuario usuActual;
 
     private void ButtonBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ButtonBuscarActionPerformed
        try {
-            String id=JOptionPane.showInputDialog(this,"Ingrese el ID del Rol");
+            String id = JOptionPane.showInputDialog(this, "Ingrese el ID del Usuario");
             int rolId= Integer.parseInt(id);
             IUsuRepository repository=new UsuarioRepository();
             IBuscarUsuQuery queryHandler = new BuscarUsuQueryHandler(repository);
